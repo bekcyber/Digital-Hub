@@ -18,6 +18,8 @@ import functools
 import io
 import json
 import os
+import http.server
+import socketserver
 import re
 import sys
 import threading
@@ -1098,5 +1100,18 @@ def main():
     bot.infinity_polling(skip_pending=True)
 
 
-if __name__ == "__main__":
+def run_dummy_server():
+    port = int(os.environ.get("PORT", 10000))
+    handler = http.server.SimpleHTTPRequestHandler
+    try:
+        with socketserver.TCPServer(("", port), handler) as httpd:
+            httpd.serve_forever()
+    except:
+        pass
+
+if name == "main":
+    # Render port talabini qondirish uchun soxta veb-serverni yoqamiz
+    threading.Thread(target=run_dummy_server, daemon=True).start()
+    
+    # Asosiy botni ishga tushiramiz
     main()
