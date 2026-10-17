@@ -10,7 +10,7 @@ from werkzeug.utils import secure_filename
 # SOZLAMALAR
 # =========================================================
 
-TOKEN = "8837281818:AAH706w44n41J7WufGVmT2KAw2YrONNIFbI"
+TOKEN = "8839436278:AAFe_LPMB1VdGl6TfKPsG5uD9qcQNrk_7P4"
 
 WEB_APP_URL = "https://cozy-gelato-2487b2.netlify.app"
 
