@@ -1109,7 +1109,7 @@ def run_dummy_server():
     except:
         pass
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     # Render port talabini qondirish uchun soxta veb-serverni yoqamiz
     threading.Thread(target=run_dummy_server, daemon=True).start()
     
