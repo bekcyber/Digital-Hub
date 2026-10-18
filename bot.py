@@ -34,7 +34,7 @@ from html import escape as _escape
 # ============================================================
 # 1) SOZLAMALAR — faqat shu qismni o'zgartiring
 # ============================================================
-TOKEN = "8839436278:AAFe_LPMB1VdGl6TfKPsG5uD9qcQNrk_7P4"  # @BotFather bergan YANGI token
+TOKEN = "8839436278:AAFPCfVuaxDw7wTIzeQkesZDZ2x99Fe3tUg"  # @BotFather bergan YANGI token
 ADMIN_ID = 8545919348                             # sizning Telegram ID raqamingiz (@userinfobot beradi)
 MINI_APP_URL = "https://cozy-gelato-2487b2.netlify.app/"                        # mini app havolasi (https:// bilan boshlansin)
 APP_NAME = "Digital Hub"    # ilova nomi (Firebase'dagi nom ustun turadi)
